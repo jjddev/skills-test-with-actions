@@ -16,11 +16,22 @@ on:
       age:
         description: "enter with you age"
         type: number
+        required: true
 
       isAlive: 
         description: "are you alive?"
         required: true
         type: boolean
+
+      someChoice:
+        description: "pick a value"
+        required: true
+        type: choice
+          - one
+          - two
+          - three
+          - four
+          - five
 
 jobs: 
   helloflow:
