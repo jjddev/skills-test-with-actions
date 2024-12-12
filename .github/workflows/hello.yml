@@ -13,7 +13,7 @@ jobs:
   helloflow:
     name: "foobar"
     runs-on:
-      - ubuntu-lastest
+      - ubuntu-latest
 
     steps:
       - name: first one
