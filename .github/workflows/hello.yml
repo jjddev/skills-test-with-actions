@@ -1,0 +1,26 @@
+name: hello workflow
+on:
+  workflow_dispatch:
+
+    inputs:
+      name:
+        description: "whats your name?"
+        default: "tatu"
+        required: true
+        type: string
+
+jobs: 
+  helloflow:
+    name: "foobar"
+    runs-on:
+      - ubuntu-lastest
+
+    steps:
+      - name: first one
+        run: |
+          echo "line oneeee!"
+          echo "var name is: ${{ github.event.inputs.name }}"
+      
+
+      
+    
