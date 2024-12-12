@@ -9,6 +9,19 @@ on:
         required: true
         type: string
 
+      city:
+        description: "enter with you city"
+        type: string
+
+      age:
+        description: "enter with you age"
+        type: number
+
+      isAlive: 
+        description: "are you alive?"
+        required: true
+        type: boolean
+
 jobs: 
   helloflow:
     name: "foobar"
