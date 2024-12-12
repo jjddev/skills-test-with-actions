@@ -20,6 +20,14 @@ jobs:
         run: |
           echo "line oneeee!"
           echo "var name is: ${{ github.event.inputs.name }}"
+
+      - name: clean resources
+        run:
+          echo "cleaning resources!"
+          
+      - name: finishing
+        run: 
+          echo "finishing last step"
       
 
       
