@@ -24,7 +24,6 @@ on:
 
 jobs: 
   helloflow:
-    name: "foobar"
     runs-on:
       - ubuntu-latest
 
@@ -33,6 +32,9 @@ jobs:
         run: |
           echo "line oneeee!"
           echo "var name is: ${{ github.event.inputs.name }}"
+          echo "var city is: ${{ github.event.inputs.city }}"
+          echo "var age is: ${{ github.event.inputs.age }}"
+          echo "var isAlive is: ${{ github.event.inputs.isAlive }}"
 
       - name: clean resources
         run:
