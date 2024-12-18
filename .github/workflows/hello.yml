@@ -27,12 +27,7 @@ on:
         description: "pick a value"
         required: true
         type: choice
-        options:
-          - one
-          - two
-          - three
-          - four
-          - five
+        options: [one, two, three, fout, five]
 
 jobs: 
   helloflow:
